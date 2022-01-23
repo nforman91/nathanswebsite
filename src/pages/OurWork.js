@@ -14,6 +14,7 @@ const OurWork = () => {
             initial="hidden" 
             animate="show"
             exit="exit"
+            style={{ background: '#fff' }}
         >
             <StyledMovie>
                 <h2>The Athlete</h2>
