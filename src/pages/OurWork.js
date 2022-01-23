@@ -3,10 +3,18 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 // Images
 import skiingnate from '../img/skiingnate.JPG';
+// Animations
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animation';
 
 const OurWork = () => {
     return (
-        <StyledWork>
+        <StyledWork 
+            variants={pageAnimation} 
+            initial="hidden" 
+            animate="show"
+            exit="exit"
+        >
             <StyledMovie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
@@ -32,7 +40,7 @@ const OurWork = () => {
     );
 };
 
-const StyledWork = styled.div`
+const StyledWork = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
