@@ -5,50 +5,50 @@ import styled from 'styled-components';
 
 const ServicesSection = () => {
   return (
-    <Services>
+    <StyledServices>
       <StyledDescription>
         <h2>
           High <span>quality</span> services
         </h2>
-        <Cards>
-          <Card>
+        <StyledCards>
+          <StyledCard>
             <div className="icon">
-              <img src={stopwatch} alt="stopwatch"/>
+              <img className="shrink-icon" src={stopwatch} alt="stopwatch"/>
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </Card>
-          <Card>
+          </StyledCard>
+          <StyledCard>
             <div className="icon">
-              <img src={stopwatch} alt="stopwatch"/>
+              <img className="shrink-icon" src={stopwatch} alt="stopwatch"/>
               <h3>Teamwork</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </Card>
-          <Card>
+          </StyledCard>
+          <StyledCard>
             <div className="icon">
-              <img src={stopwatch} alt="stopwatch"/>
+              <img className="shrink-icon" src={stopwatch} alt="stopwatch"/>
               <h3>Diaphragm</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </Card>
-          <Card>
+          </StyledCard>
+          <StyledCard>
             <div className="icon">
-              <img src={stopwatch} alt="stopwatch"/>
+              <img className="shrink-icon" src={stopwatch} alt="stopwatch"/>
               <h3>Affordable</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </Card>
-        </Cards>
+          </StyledCard>
+        </StyledCards>
       </StyledDescription>
       <StyledImage>
         <img src={stopwatch} alt="stopwatch"/>
       </StyledImage>
-    </Services>
+    </StyledServices>
   );
 };
 
-const Services = styled(StyledAbout)`
+const StyledServices = styled(StyledAbout)`
   h2{
     padding-bottom: 5rem;
   }
@@ -58,13 +58,16 @@ const Services = styled(StyledAbout)`
   }
 `;
 
-const Cards = styled.div`
+const StyledCards = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
-const Card = styled.div`
+const StyledCard = styled.div`
   flex-basis: 20rem;
+  .shrink-icon{
+    width: 2.5rem;
+  }
   .icon{
     display: flex;
     align-items: center;
