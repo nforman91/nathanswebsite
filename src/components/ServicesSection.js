@@ -2,10 +2,18 @@ import React from "react";
 import stopwatch from "../img/stopwatch.png";
 import { StyledAbout, StyledDescription, StyledImage } from '../styles';
 import styled from 'styled-components';
+import { scrollReveal } from '../animation';
+import { useScroll } from './useScroll';
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <StyledServices>
+    <StyledServices 
+      variants={scrollReveal} 
+      ref={element}
+      // animate={controls} 
+      // initial='hidden' 
+    >
       <StyledDescription>
         <h2>
           High <span>quality</span> services
