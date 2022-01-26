@@ -1,10 +1,10 @@
 import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
-import AboutUs from "./pages/AboutUs";
-import OurWork from "./pages/OurWork";
-import ContactUs from "./pages/ContactUs";
+import AboutMe from "./pages/AboutMe";
+import MyWork from "./pages/MyWork";
+import ContactMe from "./pages/ContactMe";
 import Nav from './components/Nav';
-import MovieDetail from "./pages/MovieDetail";
+import WorkDetail from "./pages/WorkDetail";
 // Router
 import { Switch, Route, useLocation } from 'react-router-dom';
 // Animation
@@ -20,16 +20,16 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route exact path="/">
-            <AboutUs />
+            <AboutMe />
           </Route>
           <Route exact path="/work">
-            <OurWork/>
+            <MyWork/>
           </Route>
           <Route path="/work/:id">
-            <MovieDetail/>
+            <WorkDetail/>
           </Route>
           <Route path="/contact">
-            <ContactUs/>
+            <ContactMe/>
           </Route>
         </Switch>
       </AnimatePresence>
