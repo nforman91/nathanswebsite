@@ -8,7 +8,7 @@ import {motion} from 'framer-motion';
 import {pageAnimation} from '../animation';
 import ScrollTop from '../components/ScrollTop';
 
-const AboutUs = () => {
+const AboutMe = () => {
   return (
     <motion.div 
       variants={pageAnimation} 
@@ -25,4 +25,4 @@ const AboutUs = () => {
 
 };
 
-export default AboutUs;
+export default AboutMe;

@@ -16,7 +16,7 @@ import {
 import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 
-const OurWork = () => {
+const MyWork = () => {
     const [element, controls] = useScroll();
     const [element2, controls2] = useScroll();
     return (
@@ -31,7 +31,6 @@ const OurWork = () => {
                 <Frame1 variants={slider}></Frame1>
                 <Frame2 variants={slider}></Frame2>
                 <Frame3 variants={slider}></Frame3>
-                <Frame4 variants={slider}></Frame4>
             </motion.div>
             <StyledMovie>
                 <motion.h2 variants={fade}>The Athlete</motion.h2>
@@ -108,20 +107,16 @@ const Frame1 = styled(motion.div)`
     top: 10%;
     width: 100%;
     height: 100vh;
-    background: #fffebf;
+    background: #ff0000;
     z-index: 2;
 `;
 
 const Frame2 = styled(Frame1)`
-    background: #ff8efb;
+    background: #ff7300;
 `;
 
 const Frame3 = styled(Frame1)`
-    background: #8ed2ff;
+    background: #fffb00;
 `;
 
-const Frame4 = styled(Frame1)`
-    background: #8effa0;
-`;
-
-export default OurWork;
+export default MyWork;

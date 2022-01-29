@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { pageAnimation, titleAnim } from '../animation';
 import styled from 'styled-components';
 
-const ContactUs = () => {
+const ContactMe = () => {
+    const myEmail = `nathan.forman@gmail.com`
+
     return (
         <StyledContact
             variants={pageAnimation} 
@@ -22,19 +24,18 @@ const ContactUs = () => {
                 <StyledHide>
                     <StyledSocial variants={titleAnim}>
                         <StyledCircle/>
-                        <h2>Send Us A Message</h2>
+                        <h2>Email: </h2>
+                            <StyledA href={`mailto:${myEmail}`}>nathan.forman@gmail.com</StyledA>
                     </StyledSocial>
                 </StyledHide>
                 <StyledHide>
                     <StyledSocial variants={titleAnim}>
                         <StyledCircle/>
-                        <h2>Send an email.</h2>
-                    </StyledSocial>
-                </StyledHide>
-                <StyledHide>
-                    <StyledSocial variants={titleAnim}>
-                        <StyledCircle/>
-                        <h2>Social Media</h2>
+                        <h2>Socials: </h2>
+                        <StyledUl>
+                            <li><StyledA href="https://www.linkedin.com/in/nathanforman/" target="_blank">LinkedIn</StyledA></li>
+                            <li><StyledA href="https://github.com/nforman91" target="_blank">GitHub</StyledA></li>
+                        </StyledUl>
                     </StyledSocial>
                 </StyledHide>
             </div>
@@ -74,10 +75,20 @@ const StyledCircle = styled.div`
 const StyledSocial = styled(motion.div)`
     display: flex;
     align-items: center;
+    margin-top: -2.5rem;
     h2{
         margin: 2rem;
     }
 `;
 
-export default ContactUs;
+const StyledA = styled.a`
+    font-size: 3rem;
+`;
+
+const StyledUl = styled.ul`
+    margin: 15rem 0rem 0rem -10rem;
+    font-size: 3rem;
+`;
+
+export default ContactMe;
 
