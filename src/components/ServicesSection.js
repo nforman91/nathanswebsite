@@ -16,7 +16,7 @@ const ServicesSection = () => {
     >
       <StyledDescription>
         <h2>
-          My<span>projects</span>
+          My<span>{` projects`}</span>
         </h2>
         <StyledCards>
           <StyledCard>

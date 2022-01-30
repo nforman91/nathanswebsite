@@ -15,7 +15,7 @@ const AboutSection = () => {
           <Hide>
             <motion.h2 
               variants={titleAnim}
-            >Front End</motion.h2>
+            >Full Stack</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 
@@ -32,10 +32,10 @@ const AboutSection = () => {
         </motion.div>
         <motion.p variants={fade}>
           Thank you for visiting my website! I'm excited to learn
-          more about front end web development in my coding journey!
+          more about full stack web development in my coding journey!
         </motion.p>
         <motion.button variants={fade}>
-          Contact Me
+            <Link to='/contact' style={{color: '#ffffff', textDecoration: 'none'}}>Contact Me</Link>
         </motion.button>
       </StyledDescription>
       <StyledImage>

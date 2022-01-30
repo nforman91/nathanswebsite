@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 // Images
 import skiingnate from '../img/skiingnate.JPG';
+import hockeyteamslibrary from '../img/hockey-teams-library.png';
 // Animations
 import { motion } from 'framer-motion';
 import {
@@ -33,13 +34,29 @@ const MyWork = () => {
                 <Frame3 variants={slider}></Frame3>
             </motion.div>
             <StyledMovie>
-                <motion.h2 variants={fade}>The Athlete</motion.h2>
+                <motion.h2 variants={fade}>Hockey Teams Library</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Link to="/work/the-athlete">
                     <Hide>
-                        <motion.img variants={photoAnim} src={skiingnate} alt="profile"/>
+                        <motion.img variants={photoAnim} src={hockeyteamslibrary} alt="hockey teams library image"/>
                     </Hide>
-                </Link>
+                <div className="button-container">
+                    <motion.button variants={fade}>
+                        <a 
+                            href="https://hockey-team-library.vercel.app/" 
+                            className="visit-button" 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >Visit Project</a>
+                    </motion.button>
+                    <motion.button variants={fade}>
+                        <a 
+                            href="https://github.com/nforman91/image-library/tree/main/image-library" 
+                            className="github-button" 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >GitHub</a>
+                    </motion.button>
+                </div>
             </StyledMovie>
             <StyledMovie 
                 ref={element} 
@@ -93,6 +110,16 @@ const StyledMovie = styled(motion.div)`
         width: 100%;
         height: 70vh;
         object-fit: cover;
+    }
+    .button-container{
+        margin-left: 40rem;
+    }
+    button{
+        margin-top: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
     }
 `;
 

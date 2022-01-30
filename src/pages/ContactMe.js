@@ -32,9 +32,12 @@ const ContactMe = () => {
                     <StyledSocial variants={titleAnim}>
                         <StyledCircle/>
                         <h2>Socials: </h2>
+                    </StyledSocial>
+                    <StyledSocial variants={titleAnim}>
                         <StyledUl>
                             <li><StyledA href="https://www.linkedin.com/in/nathanforman/" target="_blank">LinkedIn</StyledA></li>
                             <li><StyledA href="https://github.com/nforman91" target="_blank">GitHub</StyledA></li>
+                            <li><StyledA href="https://www.discogs.com/user/nforman" target="_blank">Discogs</StyledA></li>
                         </StyledUl>
                     </StyledSocial>
                 </StyledHide>
@@ -86,7 +89,7 @@ const StyledA = styled.a`
 `;
 
 const StyledUl = styled.ul`
-    margin: 15rem 0rem 0rem -10rem;
+    margin: 2rem 0rem 0rem 10rem;
     font-size: 3rem;
 `;
 
