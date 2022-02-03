@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 // Images
 import skiingnate from '../img/skiingnate.JPG';
 import hockeyteamslibrary from '../img/hockey-teams-library.png';
+import coderheroes from '../img/coder_heroes.png';
 // Animations
 import { motion } from 'framer-motion';
 import {
@@ -34,7 +35,7 @@ const MyWork = () => {
                 <Frame3 variants={slider}></Frame3>
             </motion.div>
             <StyledMovie>
-                <motion.h2 variants={fade}>Hockey Teams Library</motion.h2>
+                <motion.h2>Hockey Teams Library</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                     <Hide>
                         <motion.img variants={photoAnim} src={hockeyteamslibrary} alt="hockey teams library image"/>
@@ -58,7 +59,37 @@ const MyWork = () => {
                     </motion.button>
                 </div>
             </StyledMovie>
-            <StyledMovie 
+            <StyledMovie
+                ref={element} 
+                variants={fade}
+                animate={controls}
+                initial='hidden'
+            >
+                <motion.h2>CoderHeroes</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                    <Hide>
+                        <motion.img variants={photoAnim} src={coderheroes} alt="coder heroes image"/>
+                    </Hide>
+                <div className="button-container">
+                    <motion.button variants={fade}>
+                        <a 
+                            href="https://a.coderheroes.dev/" 
+                            className="visit-button" 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >Visit Project</a>
+                    </motion.button>
+                    <motion.button variants={fade}>
+                        <a 
+                            href="https://github.com/BloomTech-Labs/coder-heroes-fe" 
+                            className="github-button" 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >GitHub</a>
+                    </motion.button>
+                </div>
+            </StyledMovie>
+            {/* <StyledMovie 
                 ref={element} 
                 variants={fade}
                 animate={controls}
@@ -81,8 +112,8 @@ const MyWork = () => {
                 <Link to="/work/good-times">
                     <img src={skiingnate} alt="profile"/>
                 </Link>
-            </StyledMovie>
-            <ScrollTop/>
+            </StyledMovie> */}
+            {/* <ScrollTop/> */}
         </StyledWork>
     );
 };
@@ -112,7 +143,7 @@ const StyledMovie = styled(motion.div)`
         object-fit: cover;
     }
     .button-container{
-        margin-left: 40rem;
+        margin-left: 32rem;
     }
     button{
         margin-top: 1rem;
@@ -134,16 +165,16 @@ const Frame1 = styled(motion.div)`
     top: 10%;
     width: 100%;
     height: 100vh;
-    background: #ff0000;
+    background: #23d997;
     z-index: 2;
 `;
 
 const Frame2 = styled(Frame1)`
-    background: #ff7300;
+    background: #9ff7d6;
 `;
 
 const Frame3 = styled(Frame1)`
-    background: #fffb00;
+    background: #beffe7;
 `;
 
 export default MyWork;

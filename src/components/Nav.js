@@ -13,11 +13,19 @@ const Nav = () => {
             </Link></h1>
             <ul>
                 <li>
-                    <Link to="/">About Me</Link>
+                    <Link to="/">Home</Link>
                     <StyledLine 
                         transition={{ duration: 0.75 }} 
                         initial={{ width: "0%" }}
                         animate={{ width: pathname === "/" ? "50%" : "0%" }}
+                    />
+                </li>
+                <li>
+                    <Link to="/about">About Me</Link>
+                    <StyledLine 
+                        transition={{ duration: 0.75 }} 
+                        initial={{ width: "0%" }}
+                        animate={{ width: pathname === "/about" ? "50%" : "0%" }}
                     />
                 </li>
                 <li>

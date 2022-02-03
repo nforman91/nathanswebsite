@@ -1,12 +1,9 @@
 import React from "react";
 //Page Components
-import AboutSection from "../components/AboutSection";
-import ServicesSection from "../components/ServicesSection";
-import FaqSection from "../components/FaqSection";
+import AboutMeComponent from "../components/AboutMeComponent";
 // Animations
 import {motion} from 'framer-motion';
 import {pageAnimation} from '../animation';
-import ScrollTop from '../components/ScrollTop';
 
 const AboutMe = () => {
   return (
@@ -16,13 +13,9 @@ const AboutMe = () => {
       animate="show"
       exit="exit"
     >
-      <AboutSection />
-      <ServicesSection/>
-      <FaqSection/>
-      <ScrollTop/>
+      <AboutMeComponent/>
     </motion.div>
   );
-
 };
 
 export default AboutMe;

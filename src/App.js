@@ -5,6 +5,7 @@ import MyWork from "./pages/MyWork";
 import ContactMe from "./pages/ContactMe";
 import Nav from './components/Nav';
 import WorkDetail from "./pages/WorkDetail";
+import Home from './pages/Home';
 // Router
 import { Switch, Route, useLocation } from 'react-router-dom';
 // Animation
@@ -20,14 +21,17 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
             <AboutMe />
           </Route>
           <Route exact path="/work">
             <MyWork/>
           </Route>
-          <Route path="/work/:id">
+          {/* <Route path="/work/:id">
             <WorkDetail/>
-          </Route>
+          </Route> */}
           <Route path="/contact">
             <ContactMe/>
           </Route>

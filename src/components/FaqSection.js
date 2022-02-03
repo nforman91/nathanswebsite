@@ -15,30 +15,26 @@ const FaqSection = () => {
             // animate={controls} 
             // initial='hidden'
         >
-            <h2>Any questions <span>FAQ</span></h2>
+            <h2>Contact <span>Information</span></h2>
             <AnimateSharedLayout>
-                <Toggle title="How Do I Start?">
+                <Toggle title="Email">
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, optio!</p>
+                        <p>nathan.forman@gmail.com</p>
                     </div>
                 </Toggle>
-                <Toggle title="Daily Schedule">
+                <Toggle title="LinkedIn">
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, optio!</p>
+                        <p>https://www.linkedin.com/in/nathanforman/</p>
                     </div>
                 </Toggle>
-                <Toggle title="Different Payment Methods">
+                <Toggle title="GitHub">
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, optio!</p>
+                        <p>https://github.com/nforman91</p>
                     </div>
                 </Toggle>
-                <Toggle title="What products do you offer?">
+                <Toggle title="Discogs">
                     <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, optio!</p>
+                        <p>https://www.discogs.com/user/nforman</p>
                     </div>
                 </Toggle>
             </AnimateSharedLayout>
