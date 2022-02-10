@@ -43,9 +43,6 @@ const AboutSection = () => {
                 style={{color: '#ffffff', textDecoration: 'none'}}
             >Website GitHub</a>
         </motion.button>
-        <motion.button variants={fade}>
-            <Link to='/contact' style={{color: '#ffffff', textDecoration: 'none'}}>Contact Me</Link>
-        </motion.button>
       </StyledDescription>
       <StyledImage>
         <motion.img variants={photoAnim} src={skiingnate} alt="picture of Nate skiing" />
