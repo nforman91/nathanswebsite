@@ -29,7 +29,7 @@ const AboutMeComponent = () => {
                         <StyledTitles>CSS</StyledTitles>
                     </StyledLogoContainers>
                     <StyledLogoContainers>
-                        <StyledLogo src={js_logo} alt="js logo"/>
+                        <StyledLogo src={js_logo} style={{ width: '4rem' }} alt="js logo"/>
                         <StyledTitles>JavaScript</StyledTitles>
                     </StyledLogoContainers>
                     <StyledLogoContainers>
@@ -37,7 +37,7 @@ const AboutMeComponent = () => {
                         <StyledTitles>React</StyledTitles>
                     </StyledLogoContainers>
                     <StyledLogoContainers>
-                        <StyledLogo src={node_logo} alt="node logo"/>
+                        <StyledLogo src={node_logo} style={{ height: '4rem', marginTop: '1rem' }} alt="node logo"/>
                         <StyledTitles>Node</StyledTitles>
                     </StyledLogoContainers>
                 </StyledLogoContainer>
