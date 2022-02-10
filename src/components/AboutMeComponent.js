@@ -64,6 +64,7 @@ const StyledAboutMe = styled.div`
     background-color: #ffffff;
     border-radius: 20px;
     border: 1px solid #23d997;
+    box-shadow: 0 0 1em gray;;
 `;
 
 const StyledText = styled.div`
