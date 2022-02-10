@@ -4,7 +4,7 @@ import AboutMe from "./pages/AboutMe";
 import MyWork from "./pages/MyWork";
 import ContactMe from "./pages/ContactMe";
 import Nav from './components/Nav';
-import WorkDetail from "./pages/WorkDetail";
+// import WorkDetail from "./pages/WorkDetail";
 import Home from './pages/Home';
 // Router
 import { Switch, Route, useLocation } from 'react-router-dom';

@@ -9,7 +9,10 @@ import {pageAnimation} from '../animation';
 const MovieDetail = () => {
     const history = useHistory();
     const url = history.location.pathname;
-    const [movies, setMovies] = useState(WorkState);
+    const [
+        movies, 
+        // setMovies
+    ] = useState(WorkState);
     const [movie, setMovie] = useState(null);
 
     // UseEffect

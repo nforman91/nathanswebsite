@@ -35,6 +35,15 @@ const AboutSection = () => {
           more about full stack web development in my coding journey!
         </motion.p>
         <motion.button variants={fade}>
+            <a 
+                href="https://github.com/nforman91/nathanswebsite" 
+                className="github-button" 
+                target="_blank" 
+                rel="noreferrer"
+                style={{color: '#ffffff', textDecoration: 'none'}}
+            >Website GitHub</a>
+        </motion.button>
+        <motion.button variants={fade}>
             <Link to='/contact' style={{color: '#ffffff', textDecoration: 'none'}}>Contact Me</Link>
         </motion.button>
       </StyledDescription>

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // Images
-import skiingnate from '../img/skiingnate.JPG';
+// import skiingnate from '../img/skiingnate.JPG';
 import hockeyteamslibrary from '../img/hockey-teams-library.png';
 import coderheroes from '../img/coder_heroes.png';
 // Animations
@@ -20,7 +20,8 @@ import ScrollTop from '../components/ScrollTop';
 
 const MyWork = () => {
     const [element, controls] = useScroll();
-    const [element2, controls2] = useScroll();
+    // const [element2, controls2] = useScroll();
+    
     return (
         <StyledWork 
             variants={pageAnimation} 
@@ -113,7 +114,7 @@ const MyWork = () => {
                     <img src={skiingnate} alt="profile"/>
                 </Link>
             </StyledMovie> */}
-            {/* <ScrollTop/> */}
+            <ScrollTop/>
         </StyledWork>
     );
 };
