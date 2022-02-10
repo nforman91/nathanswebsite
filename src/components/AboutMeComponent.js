@@ -37,7 +37,7 @@ const AboutMeComponent = () => {
                         <StyledTitles>React</StyledTitles>
                     </StyledLogoContainers>
                     <StyledLogoContainers>
-                        <StyledLogo src={node_logo} style={{ height: '4rem', marginTop: '1rem' }} alt="node logo"/>
+                        <StyledLogo src={node_logo} style={{ width: '6rem', height: '4rem', marginTop: '1rem' }} alt="node logo"/>
                         <StyledTitles>Node</StyledTitles>
                     </StyledLogoContainers>
                 </StyledLogoContainer>
@@ -60,11 +60,11 @@ const StyledAboutMe = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    height: 55rem;
+    height: 100%;
     background-color: #ffffff;
     border-radius: 20px;
     border: 1px solid #23d997;
-    box-shadow: 0 0 1em gray;;
+    box-shadow: 0 0 1em gray;
 `;
 
 const StyledText = styled.div`
@@ -96,7 +96,7 @@ const StyledLogoContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 31rem;
+    width: 32rem;
     margin: 1rem;
 `;
 
