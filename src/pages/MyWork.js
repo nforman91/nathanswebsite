@@ -12,8 +12,8 @@ import {
     fade, 
     photoAnim, 
     lineAnim, 
-    slider, 
-    sliderContainer
+    // slider, 
+    // sliderContainer
 } from '../animation';
 import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
@@ -30,11 +30,11 @@ const MyWork = () => {
             exit="exit"
             style={{ background: '#fff' }}
         >
-            <motion.div variants={sliderContainer}>
+            {/* <motion.div variants={sliderContainer}>
                 <Frame1 variants={slider}></Frame1>
                 <Frame2 variants={slider}></Frame2>
                 <Frame3 variants={slider}></Frame3>
-            </motion.div>
+            </motion.div> */}
             <StyledMovie>
                 <motion.h2>Hockey Teams Library</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
