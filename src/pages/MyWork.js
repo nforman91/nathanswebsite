@@ -37,6 +37,7 @@ const MyWork = () => {
             </motion.div> */}
             <StyledMovie>
                 <motion.h2>Hockey Teams Library</motion.h2>
+                <StyledP>An application for displaying basic information about NHL teams. Combines third-party API data for displaying team information in modals, and local state for displaying logos/sorting functionality.</StyledP>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                     <Hide>
                         <motion.img variants={photoAnim} src={hockeyteamslibrary} alt="hockey teams library image"/>
@@ -67,6 +68,7 @@ const MyWork = () => {
                 initial='hidden'
             >
                 <motion.h2>CoderHeroes</motion.h2>
+                <StyledP>An application to help youth break into tech built for third-party client. Primary contributions were UX designs using Figma and Ant Design, secondary contributions included adding functionality for multiple roles, including parent, instructor and admin.</StyledP>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                     <Hide>
                         <motion.img variants={photoAnim} src={coderheroes} alt="coder heroes image"/>
@@ -153,6 +155,10 @@ const StyledMovie = styled(motion.div)`
         text-decoration: none;
         color: #000000;
     }
+`;
+
+const StyledP = styled.p`
+    color: #000000;
 `;
 
 const Hide = styled.div`
