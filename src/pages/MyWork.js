@@ -68,7 +68,7 @@ const MyWork = () => {
                 initial='hidden'
             >
                 <motion.h2>CoderHeroes</motion.h2>
-                <StyledP>An application to help youth break into tech built for third-party client. Primary contributions were UX designs using Figma and Ant Design, secondary contributions included adding functionality for multiple roles, including parent, instructor and admin.</StyledP>
+                <StyledP>An application to help youth break into tech built for third-party client. Contributions included UX designs using Figma and Ant Design, as well as adding functionality for multiple roles, including parent, instructor and admin.</StyledP>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                     <Hide>
                         <motion.img variants={photoAnim} src={coderheroes} alt="coder heroes image"/>
