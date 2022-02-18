@@ -48,7 +48,7 @@ const ContactMe = () => {
 
 const StyledContact = styled(motion.div)`
     padding: 5rem 10rem;
-    color: #353535;
+    color: black;
     min-height: 90vh;
     @media (max-width: 320px){
         padding: 2rem;
