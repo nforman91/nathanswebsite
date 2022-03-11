@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import bouldernate from '../img/bouldernate.jpg';
+import skiingnate from "../img/skiingnate.JPG";
 import html_logo from '../img/html_logo.png';
 import css_logo from '../img/css_logo.png';
 import js_logo from '../img/js_logo.png';
@@ -41,7 +41,7 @@ const AboutMeComponent = () => {
                         <StyledTitles>Node</StyledTitles>
                     </StyledLogoContainers>
                 </StyledLogoContainer>
-                <StyledPic variants={photoAnim} src={bouldernate} alt="Nathan standing in front of scenic view"/>
+                <StyledPic variants={photoAnim} src={skiingnate} alt="picture of Nate skiing" />
                 <StyledText>
                     I grew up in Boulder, Colorado and currently reside in Seattle, Washington.
                     Before my switch to tech, I raised money for various non-profit arts organizations for four years.

@@ -1,5 +1,5 @@
 import React from "react";
-import skiingnate from "../img/skiingnate.JPG";
+import bouldernate from '../img/bouldernate.jpg';
 import { StyledAbout, StyledDescription, StyledImage, Hide } from '../styles';
 import { Link } from 'react-router-dom';
 // Framer Motion
@@ -45,7 +45,7 @@ const AboutSection = () => {
         </motion.button>
       </StyledDescription>
       <StyledImage>
-        <motion.img variants={photoAnim} src={skiingnate} alt="picture of Nate skiing" />
+        <motion.img variants={photoAnim} src={bouldernate} alt="Nathan standing in front of scenic view"/>
       </StyledImage>
       <Wave/>
     </StyledAbout>
