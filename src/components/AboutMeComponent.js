@@ -48,7 +48,7 @@ const AboutMeComponent = () => {
                 </StyledText>
                 <StyledText>
                     I love music, and am an avid record collector. I can play electric and classical guitar, as well as tenor saxophone.
-                    My favorite outdoor activities include fly fishing, hiking, and skiing.
+                    My favorite outdoor activities include fly fishing, biking, hiking, and skiing.
                 </StyledText>
             </StyledAboutMe>
         </StyledBackground>
