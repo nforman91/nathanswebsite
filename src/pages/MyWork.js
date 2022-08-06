@@ -21,7 +21,7 @@ import ScrollTop from '../components/ScrollTop';
 
 const MyWork = () => {
     const [element, controls] = useScroll();
-    // const [element2, controls2] = useScroll();
+    const [element2, controls2] = useScroll();
     
     return (
         <StyledWork 
@@ -94,9 +94,9 @@ const MyWork = () => {
                 </div>
             </StyledMovie>
             <StyledMovie
-                ref={element} 
+                ref={element2} 
                 variants={fade}
-                animate={controls}
+                animate={controls2}
                 initial='hidden'
             >
                 <motion.h2>Collection Tracker</motion.h2>
