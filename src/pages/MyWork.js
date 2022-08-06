@@ -5,6 +5,7 @@ import styled from 'styled-components';
 // import skiingnate from '../img/skiingnate.JPG';
 import hockeyteamslibrary from '../img/hockey-teams-library.png';
 import coderheroes from '../img/coder_heroes.png';
+import collectiontracker from '../img/collectiontracker.png';
 // Animations
 import { motion } from 'framer-motion';
 import {
@@ -85,6 +86,37 @@ const MyWork = () => {
                     <motion.button variants={fade}>
                         <a 
                             href="https://github.com/BloomTech-Labs/coder-heroes-fe" 
+                            className="github-button" 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >GitHub</a>
+                    </motion.button>
+                </div>
+            </StyledMovie>
+            <StyledMovie
+                ref={element} 
+                variants={fade}
+                animate={controls}
+                initial='hidden'
+            >
+                <motion.h2>Collection Tracker</motion.h2>
+                <StyledP>An application to help keep track of collections.</StyledP>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                    <Hide>
+                        <motion.img variants={photoAnim} src={collectiontracker} alt="collection tracker image"/>
+                    </Hide>
+                <div className="button-container">
+                    <motion.button variants={fade}>
+                        <a 
+                            href="https://collection-tracker-fe.vercel.app/" 
+                            className="visit-button" 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >Visit Project</a>
+                    </motion.button>
+                    <motion.button variants={fade}>
+                        <a 
+                            href="https://github.com/nforman91/collection_tracker_fe" 
                             className="github-button" 
                             target="_blank" 
                             rel="noreferrer"
