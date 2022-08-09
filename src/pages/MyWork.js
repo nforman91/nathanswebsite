@@ -105,7 +105,7 @@ const MyWork = () => {
                     <Hide>
                         <motion.img variants={photoAnim} src={collectiontracker} alt="collection tracker image"/>
                     </Hide>
-                <StyledButtons className="button-container">
+                <div className="button-container">
                     <motion.button variants={fade}>
                         <a 
                             href="https://collection-tracker-fe.vercel.app/" 
@@ -130,7 +130,7 @@ const MyWork = () => {
                             rel="noreferrer"
                         >Backend GitHub</a>
                     </motion.button>
-                </StyledButtons>
+                </div>
             </StyledMovie>
             {/* <StyledMovie 
                 ref={element} 
@@ -186,7 +186,8 @@ const StyledMovie = styled(motion.div)`
         /* object-fit: cover; */
     }
     .button-container{
-        margin-left: 32rem;
+        display: flex;
+        justify-content: center;
     }
     button{
         margin-top: 1rem;
@@ -205,9 +206,9 @@ const Hide = styled.div`
     overflow: hidden;
 `;
 
-const StyledButtons = styled.div`
-    margin-left: -10rem;
-`;
+// const StyledButtons = styled.div`
+//     margin-left: -10rem;
+// `;
 
 // Frame Animation
 const Frame1 = styled(motion.div)`
