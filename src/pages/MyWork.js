@@ -206,8 +206,7 @@ const Hide = styled.div`
 `;
 
 const StyledButtons = styled.div`
-    display: flex;
-    justify-content: center;
+    margin-right: 5rem;
 `;
 
 // Frame Animation
