@@ -171,6 +171,8 @@ const StyledWork = styled(motion.div)`
     h2{
         padding: 1rem 0rem;
     }
+    display: flex;
+    align-items: center;
 `;
 
 const StyledMovie = styled(motion.div)`
