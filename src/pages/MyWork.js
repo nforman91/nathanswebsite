@@ -206,7 +206,7 @@ const Hide = styled.div`
 `;
 
 const StyledButtons = styled.div`
-    margin-right: 10rem;
+    margin-left: -10rem;
 `;
 
 // Frame Animation
