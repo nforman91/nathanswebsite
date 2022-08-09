@@ -43,7 +43,7 @@ const AboutMeComponent = () => {
                 </StyledLogoContainer>
                 <StyledPic variants={photoAnim} src={skiingnate} alt="picture of Nate skiing" />
                 <StyledText>
-                    I grew up in Boulder, Colorado and currently reside in Seattle, Washington.
+                    I grew up in Boulder, Colorado and currently reside near Seattle, Washington.
                     Before my switch to tech, I raised money for various non-profit arts organizations for four years.
                 </StyledText>
                 <StyledText>
