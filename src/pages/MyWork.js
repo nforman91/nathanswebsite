@@ -105,7 +105,7 @@ const MyWork = () => {
                     <Hide>
                         <motion.img variants={photoAnim} src={collectiontracker} alt="collection tracker image"/>
                     </Hide>
-                <div className="button-container">
+                <StyledButtons className="button-container">
                     <motion.button variants={fade}>
                         <a 
                             href="https://collection-tracker-fe.vercel.app/" 
@@ -130,7 +130,7 @@ const MyWork = () => {
                             rel="noreferrer"
                         >Backend GitHub</a>
                     </motion.button>
-                </div>
+                </StyledButtons>
             </StyledMovie>
             {/* <StyledMovie 
                 ref={element} 
@@ -171,8 +171,6 @@ const StyledWork = styled(motion.div)`
     h2{
         padding: 1rem 0rem;
     }
-    display: flex;
-    align-items: center;
 `;
 
 const StyledMovie = styled(motion.div)`
@@ -205,6 +203,11 @@ const StyledP = styled.p`
 
 const Hide = styled.div`
     overflow: hidden;
+`;
+
+const StyledButtons = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 // Frame Animation
