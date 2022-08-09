@@ -120,7 +120,15 @@ const MyWork = () => {
                             className="github-button" 
                             target="_blank" 
                             rel="noreferrer"
-                        >GitHub</a>
+                        >Frontend GitHub</a>
+                    </motion.button>
+                    <motion.button variants={fade}>
+                        <a 
+                            href="https://github.com/nforman91/collection_tracker" 
+                            className="github-button" 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >Backend GitHub</a>
                     </motion.button>
                 </div>
             </StyledMovie>
