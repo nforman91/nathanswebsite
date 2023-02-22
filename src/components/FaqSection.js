@@ -19,22 +19,22 @@ const FaqSection = () => {
             <AnimateSharedLayout>
                 <Toggle title="Email">
                     <div className="answer">
-                        <p>nathan.forman@gmail.com</p>
+                        <a href="mailto:nathan.forman@gmail.com">nathan.forman@gmail.com</a>
                     </div>
                 </Toggle>
                 <Toggle title="LinkedIn">
                     <div className="answer">
-                        <p>https://www.linkedin.com/in/nathanforman/</p>
+                        <a href="https://www.linkedin.com/in/nathanforman/" target="_blank">https://www.linkedin.com/in/nathanforman/</a>
                     </div>
                 </Toggle>
                 <Toggle title="GitHub">
                     <div className="answer">
-                        <p>https://github.com/nforman91</p>
+                        <a href="https://github.com/nforman91" target="_blank">https://github.com/nforman91</a>
                     </div>
                 </Toggle>
                 <Toggle title="Discogs">
                     <div className="answer">
-                        <p>https://www.discogs.com/user/nforman</p>
+                        <a href="https://www.discogs.com/user/nforman" target="_blank">https://www.discogs.com/user/nforman</a>
                     </div>
                 </Toggle>
             </AnimateSharedLayout>
